@@ -41,7 +41,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 189, 93, 56;
+  --bs-primary-rgb: #2ecc71;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -108,6 +108,26 @@ hr {
 
 hr:not([size]) {
   height: 1px;
+}
+
+.color-html {
+  color: #e74c3c;
+}
+
+.color-css {
+  color: #3498db;
+}
+
+.color-js {
+  color: #fbc531;
+}
+
+.color-react {
+  color: #0984e3;
+}
+
+.color-sass {
+  color: #e84393;
 }
 
 h6,
@@ -8080,7 +8100,7 @@ fieldset:disabled .btn {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: var(--bs-primary-rgb);
 }
 
 .text-secondary {
@@ -8171,10 +8191,7 @@ fieldset:disabled .btn {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(
-    var(--bs-primary-rgb),
-    var(--bs-bg-opacity)
-  ) !important;
+  background-color: var(--bs-primary-rgb);
 }
 
 .bg-secondary {
