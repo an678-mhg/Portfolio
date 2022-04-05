@@ -7,6 +7,8 @@
 // Scripts
 //
 
+AOS.init();
+
 window.addEventListener("DOMContentLoaded", (event) => {
   // Activate Bootstrap scrollspy on the main nav element
   const sideNav = document.body.querySelector("#sideNav");
@@ -41,6 +43,7 @@ const my_project = [
     technology: ["ReactJs", " JsonServer"],
     demo: "https://shopapp7.netlify.app/",
     git_responsotory: "https://github.com/an678-mhg/Shoping-App",
+    postion_aos: "fade-right",
   },
   {
     name: "Phim Moi",
@@ -51,6 +54,7 @@ const my_project = [
     technology: ["ReactJs", " Zustand", " Swiper", " Firebase"],
     demo: "https://phimmoizzz.netlify.app/",
     git_responsotory: "https://github.com/an678-mhg/PhimMoi",
+    postion_aos: "fade-left",
   },
   {
     name: "A-Social",
@@ -61,6 +65,7 @@ const my_project = [
     technology: ["ReactJs", " Zustand", " TailwindCSS", " Firebase"],
     demo: "https://a-social-app.vercel.app/",
     git_responsotory: "https://github.com/an678-mhg/Social-Media-App",
+    postion_aos: "fade-right",
   },
   {
     name: "A-Tube",
@@ -79,6 +84,7 @@ const my_project = [
     ],
     demo: "https://a-tube.vercel.app/",
     git_responsotory: "https://github.com/an678-mhg/Youtube-clone-client",
+    postion_aos: "fade-left",
   },
 ];
 
@@ -88,7 +94,8 @@ function renderProject() {
   const html = my_project.map((p) => {
     return `
             <div
-                class="d-flex flex-column flex-md-row justify-content-between mb-5"
+              data-aos=${p.postion_aos}
+              class="d-flex flex-column flex-md-row justify-content-between mb-5"
             >
                 <div class="flex-grow-1">
                     <h3 class="mb-3">${p.name}</h3>
