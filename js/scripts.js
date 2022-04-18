@@ -9,7 +9,9 @@
 
 AOS.init();
 
-window.addEventListener("DOMContentLoaded", (event) => {
+const liElement = document.querySelectorAll(".list-inline-item");
+
+window.addEventListener("DOMContentLoaded", () => {
   // Activate Bootstrap scrollspy on the main nav element
   const sideNav = document.body.querySelector("#sideNav");
   if (sideNav) {
@@ -35,15 +37,23 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 const my_project = [
   {
-    name: "Shop ecommerce",
+    name: "A-Tube",
     description:
-      "The project is built with e-commerce in mind, </br> about project technology using ReactJs on the </br> front-end, and JsonServer on the back-end",
+      "The project is a video sharing website like youtube, </br> users can login to share videos, like, subscribe, edit profiles, </br> manage channels, search by channel name, by video title.",
     image:
-      "https://res.cloudinary.com/annnn/image/upload/v1649146595/Screenshot_2022-04-05_151440_k8it9p.png",
-    technology: ["ReactJs", " JsonServer"],
-    demo: "https://shopapp7.netlify.app/",
-    git_responsotory: "https://github.com/an678-mhg/Shoping-App",
-    postion_aos: "fade-right",
+      "https://res.cloudinary.com/annnn/image/upload/v1649148789/Screenshot_2022-04-05_155223_qfumrf.png",
+    technology: [
+      "ReactJs",
+      " Redux | Redux Toolkit",
+      " TailwindCSS",
+      " Formik",
+      " NodeJs",
+      " ExpressJs",
+      " Mongodb",
+    ],
+    demo: "https://a-tube.vercel.app/",
+    git_responsotory: "https://github.com/an678-mhg/Youtube-clone-client",
+    postion_aos: "fade-left",
   },
   {
     name: "Phim Moi",
@@ -68,23 +78,25 @@ const my_project = [
     postion_aos: "fade-right",
   },
   {
-    name: "A-Tube",
-    description:
-      "The project is a video sharing website like youtube, </br> users can login to share videos, like, subscribe, edit profiles, </br> manage channels, search by channel name, by video title.",
+    name: "Blog AnDev",
+    description: "Blog sharing programming",
     image:
-      "https://res.cloudinary.com/annnn/image/upload/v1649148789/Screenshot_2022-04-05_155223_qfumrf.png",
-    technology: [
-      "ReactJs",
-      " Redux | Redux Toolkit",
-      " TailwindCSS",
-      " Formik",
-      " NodeJs",
-      " ExpressJs",
-      " Mongodb",
-    ],
-    demo: "https://a-tube.vercel.app/",
-    git_responsotory: "https://github.com/an678-mhg/Youtube-clone-client",
-    postion_aos: "fade-left",
+      "https://res.cloudinary.com/an-nguyen/image/upload/v1650267886/gsh3et7ud9whumiexflo.png",
+    technology: ["NextJS", " TailwindCSS", " Sanity"],
+    demo: "https://blog.an678-mhg.vercel.app/",
+    git_responsotory: "https://github.com/an678-mhg/blog-nextjs",
+    postion_aos: "fade-right",
+  },
+  {
+    name: "Shop ecommerce",
+    description:
+      "The project is built with e-commerce in mind, </br> about project technology using ReactJs on the </br> front-end, and JsonServer on the back-end",
+    image:
+      "https://res.cloudinary.com/annnn/image/upload/v1649146595/Screenshot_2022-04-05_151440_k8it9p.png",
+    technology: ["ReactJs", " JsonServer"],
+    demo: "https://shopapp7.netlify.app/",
+    git_responsotory: "https://github.com/an678-mhg/Shoping-App",
+    postion_aos: "fade-right",
   },
 ];
 
